@@ -59,11 +59,11 @@ public class RPNCalculator {
 			}
 			isEmptyStack();
 			if(stack.size()>1){
-				throw new Exception();
+				throw new Exception("Stack is not yet empty");
 			}
 			ret = new Double(stack.pop()).doubleValue();
 		}else{
-			throw new Exception();
+			throw new Exception("Expression is not valid");
 		}
 		return ret;
 	}

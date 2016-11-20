@@ -6,6 +6,7 @@ import junit.framework.TestCase;
 public class TestRPN extends TestCase{
 	RPNCalculator rpnCalculator = new RPNCalculator();
 	
+	//this is for testing postive number
 	public void testCase1(){
 		try {
 			assertEquals(-4.0,	rpnCalculator.calculate("1,2,3,+,-"));
@@ -110,7 +111,7 @@ public class TestRPN extends TestCase{
 			assertEquals(5,	rpnCalculator.calculate("2"));
 			fail();
 		} catch (Exception e) {
-			System.out.print(e.toString());
+			//System.out.print(e.toString());
 			assertTrue(true);
 		}
 	}
